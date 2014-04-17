@@ -1,0 +1,41 @@
+#header {
+	display: block;
+}
+
+#contentWrapper {
+	display: block;
+	overflow: auto;
+}
+
+#contentLeft {
+	width: 50%;
+	overflow: auto;
+	float: left;
+}
+
+#contentRight {
+	width: 50%;
+	float: right;
+	overflow: auto;
+}
+
+#footer {
+	display:block;
+}
+
+p. {
+	line-height: 4;
+}
+
+p.header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+p.footer {
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+}
+
