@@ -2,7 +2,7 @@
 	<head> 
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
-		<link href="simple playground.css" rel="stylesheet" type="text/css">
+		<link href="simplePlayground.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
@@ -13,14 +13,13 @@
 			<div id="contentLeft">
 				<p>Set the header: <input data-bind="value: startMessage"></input></p>
 				<p>Set the footer: <input data-bind="value: endMessage"></input></p>
-				<p>Set a the iterated list (comma separated): <input data-bind="value: iterateList"</input></p>
+				<p>Set an iterated list (comma separated): <input data-bind="value: iterateSource"</input></p>
 			</div>
 			<div id="contentRight">
 				<p>Items in the list</p>
 				<ul data-bind="foreach: iterateList">
 					<li>
-						<span data-bind="text: $index">&nbsp;&nbsp;</span>
-						<span data-bind="text: $data"></span>
+						<span data-bind="text: $data">&nbsp;&nbsp;</span>
 					</li>
 				</ul>
 			</div>
@@ -28,6 +27,6 @@
 		<div id="footer">
 			<p class="footer"><span data-bind="text: endMessage"></span></p>	
 		</div>
-		<script type="text/javascript" src="./test.js"></script>	
+		<script type="text/javascript" src="./simplePlayground.js"></script>	
 	</body>
 </html>
