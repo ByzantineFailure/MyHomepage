@@ -1,87 +1,36 @@
 <html>
 	<head> 
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
-		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
 		<link href="main.css" rel="stylesheet" type="text/css">
 	</head>
-
 	<body>
 		<div id="header">
 			<p class="headerTitle">ByzantineFailure.com</p>
-			<p class="headerSubtitle">Where I throw things at the internet and hope they work</p>
+			<aside class="headerSubtitle">Where I throw things at the internet and hope they work</aside>
 		</div>
-		<div id="contentWrapper">
-		<div id="sideContentWrapper">
-			<ul>
-				<span class="navHeader">Hosted Here</span>
-				<li class="navItem"><a href="http://www.byzantinefailure.com/cah">Cards Against Humanity</a></li>
-			</ul>	
-		</div>
-		<div id="centerContentWrapper">
-			<div class="post">
-				<h1>Some stuff you can make Knockout.js do</h1>
-				<p>This will live update the list on the right, provided you give it a comma separated list.  Yes, it's probably pretty brittle.  On the other hand, it's functionally a computed observable array so hooray!</p>
-				<hr>
-				<div class=container>
-					<div class="columnContentLeft">
-						<p>Set an iterated list (comma separated): <input data-bind="value: iterateSource"</input></p>
-					</div>
-					<div class="columnContentRight">
-						<p>Items in the list</p>
-						<ul data-bind="foreach: iterateList">
-							<li>
-								<span data-bind="text: $data"></span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<hr>
-				<div>
-				<p>The relevant HTML to produce these:</p>
-				<code>
-					&lt;p&gt;Set an iterated list (comma separated): &lt;input data-bind=&quot;value: iterateSource&quot;&lt;/input&gt;&lt;/p&gt;
-					<br>					&lt;p&gt;Items in the list&lt;/p&gt;
-					<br>					&lt;ul data-bind=&quot;foreach: iterateList&quot;&gt;
-					<br> &nbsp; &nbsp; &nbsp;		&lt;li&gt;
-												&lt;span data-bind=&quot;text: $data&quot;&gt;&lt;/span&gt;
-										&lt;/li&gt;
-					<br>					&lt;/ul&gt;
-				</code>
-				<br>
-				<p>The relevant Javascript:</p>
-				<code>
-					function AppViewModel() { <br>
-					&nbsp; &nbsp; &nbsp;var self = this; <br>
-
-					&nbsp; &nbsp; &nbsp;self.iterateSource = ko.observable("1, 2, 3, 4, 5"); <br>
-					&nbsp; &nbsp; &nbsp;self.iterateList = ko.observableArray(); <br><br>
-
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;self.listUpdater = ko.computed(function() { <br>
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;ret = []; <br>
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;splitResult = self.iterateSource().split(","); <br>
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;self.iterateList.removeAll() <br>
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;for(i = 0; i &lt; splitResult.length; i++) { <br>
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;self.iterateList.push(splitResult[i]); <br>
-					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;} <br>
-					&nbsp; &nbsp; &nbsp;}); <br>
-
-					}; <br> <br>
-
-					ko.applyBindings(new AppViewModel()); <br>
-				</code>
-				<p>You will, of course, need to make sure to include Knockout.js in your page header.</p>
-				</div>
-
-			</div>
-		</div>
-		<div id="rightPlaceholder">
-		</div>
-		</div>
-		<div id="footer">
-			<p class="footer"><a href="aboutMe.html">About Me</a></p>
-			<p class="footer">Theme shamelessly hacked and slashed out of lesscss.org's theme</p>	
-		</div>
-		<script type="text/javascript" src="index.js"></script>	
+        <div id="contentWrapper">
+            <div id="sideContent">
+                <ul>
+                    <span class="navHeader">Hosted Here</span>
+                    <li class="navItem"><a href="http://www.byzantinefailure.com/cah">Cards Against Humanity</a></li>
+                    <span class="navHeader">Also Interesting</span>
+                    <li class="navItem"><a href="http://www.github.com/byzantinefailure">My Github</a></li>
+                </ul>	
+            </div>
+            <div id="centerContent">
+                <p>Sometimes I like to make things.  Usually in python.  Not because I really <i>like</i> python, but mostly because it's there.</p>
+                <p>Sometimes these things are <a href="https://github.com/ByzantineFailure/PAX_Pinger">somewhat</a> <a href="https://github.com/ByzantineFailure/group_spotify">useful.</a></p>
+                <p>Sometimes these things are <a href="https://github.com/ByzantineFailure/TweetSqlAtMe">pretty</a> <a href="https://github.com/ByzantineFailure/SsAndGs">dumb</a></p>
+                <p>But they're always fun to write.</p>
+                <p>I am also a terrible guitarist, pianist, and saxohpone player but you gotta have a hobby, right?</p>
+                <p>If you feel so inclined you can <a href="https://twitter.com/ByzantineFail">tweet shit at me</a></p>
+                <p>If you are here in IE<=9, you may have noticed this is broken.  I'd figure a way around that if this were something I was doing professionally, but this is a personal project.  Sorry.<p>
+            </div>
+            <div id="rightPlaceholder">
+            </div>
+        </div>
+        <div id="footer">
+            <p class="footer">Theme shamelessly hacked and slashed out of lesscss.org's theme</p>	
+            <p><i>This site holds pretty dearly the principles laid out at <a href="http://motherfuckingwebsite.com">motherfuckingwebsite.com</a></i></p>
+        </div>
 	</body>
 </html>

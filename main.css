@@ -3,10 +3,13 @@ body {
 	font-color: #333333;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0px 0px 8px 0px;
+    height:99vh;
+    display:flex;
+    flex-direction: column;
 }
 
 #header {
-	height: 200px;
+	min-height: 180px;
 	background-color: #1d365d;
 	padding-top: 10px;
 	padding-left: 8%;
@@ -18,10 +21,10 @@ body {
 
 #contentWrapper {
 	display: flex;
-	overflow: auto;
+    flex:1;
 }
 
-#sideContentWrapper {
+#sideContent {
 	display: fixed;
 	width: 23%;
 	margin: 0% 1% 0% 8%;
@@ -36,7 +39,7 @@ body {
 
 }
 
-#centerContentWrapper {
+#centerContent {
 	overflow: auto;
 	margin-left: 1%
 	border-style: solid;
@@ -48,27 +51,7 @@ body {
 }
 
 #rightPlaceholder {
-	
-}
-
-.post {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.container {
-	display: block;
-	overflow: auto;
-}
-
-.columnContentLeft {
-	width: 50%;
-	float: left;
-}
-
-.columnContentRight {
-	width: 50%;
-	float: right;
+    overflow: hidden;	
 }
 
 #footer {
