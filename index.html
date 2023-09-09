@@ -3,22 +3,22 @@
 		<link href="main.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div id="header">
-			<p class="headerTitle">ByzantineFailure.com</p>
+		<header id="header">
+			<h1 class="headerTitle">ByzantineFailure.com</h1>
 			<aside class="headerSubtitle">Where I throw things at the internet and hope they work</aside>
-		</div>
+		</header>
         <div id="contentWrapper">
-            <div id="sideContent">
-                <ul>
-                    <span class="navHeader">Hosted Here</span>
-                    <li class="navItem"><a href="/cah">Cards Against Humanity</a></li>
-                    <li class="navItem"><a href="/twitterstream">TweetStream</a></li>
-                    <li class="navItem"><a href="/instantnoot">Instant Noot</a></li>
-                    <span class="navHeader">Also Interesting</span>
-                    <li class="navItem"><a href="https://www.github.com/byzantinefailure">My Github</a></li>
+            <nav id="sideContent">
+                <ul aria-labelledby="hostedHeader">
+                    <span id="hostedHeader" class="navHeader">Hosted Here</span>
+                    <li class="navItem">Nothing right now!</li>
                 </ul>	
-            </div>
-            <div id="centerContent">
+                <ul aria-labelledby="interestingHeader">
+                    <span id="interestingHeader" class="navHeader">Also Interesting</span>
+                    <li class="navItem"><a href="https://www.github.com/byzantinefailure">My Github</a></li>
+                </ul>
+            </nav>
+            <main id="centerContent">
                 <p>I write software both professionally and for fun.  Personal stuff usually in Python or Node.</p>
                 <p>Sometimes I write useful things
                     <ul>
@@ -37,13 +37,12 @@
                     </ul>
                 </p>
                 <p><a href="https://soundcloud.com/chalcedon/">I also dick around with music</a></p>
-                <p>If you feel so inclined you can <a href="https://twitter.com/ByzantineFail">tweet shit at me</a></p>
-            </div>
+            </main>
             <div id="rightPlaceholder">
             </div>
         </div>
-        <div id="footer">
+        <footer id="footer">
             <p class="footer">Theme shamelessly hacked and slashed out of lesscss.org's theme</p>	
-        </div>
+        </footer>
 	</body>
 </html>
