@@ -1,87 +1,88 @@
 body {
-	background-color: #ffffff;
-	font-color: #333333;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 0px 0px 8px 0px;
+    background-color: #ffffff;
+    font-color: #333333;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 8px 0px;
     height:99vh;
     display:flex;
     flex-direction: column;
 }
 
 #header {
-	min-height: 180px;
-	background-color: #1d365d;
-	padding-top: 10px;
-	padding-left: 8%;
-	top: 0;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	    	box-sizing: border-box;
+    min-height: 180px;
+    background-color: #1d365d;
+    padding-top: 10px;
+    padding-left: 8%;
+    top: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 #contentWrapper {
-	display: flex;
+    display: flex;
     flex:1;
 }
 
 #sideContent {
-	display: fixed;
-	width: 23%;
-	margin: 0% 1% 0% 8%;
-	background-color: #f7f7f8;
+    display: fixed;
+    width: 23%;
+    margin: 0% 1% 0% 8%;
+    padding: 16px;
+    background-color: #f7f7f8;
         min-height: 200px;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	-webkit-flex: initial;	
-		flex: initial;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	    	box-sizing: border-box;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-flex: initial;    
+        flex: initial;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 
 }
 
 #centerContent {
-	overflow: auto;
-	margin-left: 1%
-	border-style: solid;
-	border-left-width: 1px;
-	border-left-color: #333333;
-	width: 50%;
-	-webkit-flex: none;
-		flex: none;
+    overflow: auto;
+    margin-left: 1%
+    border-style: solid;
+    border-left-width: 1px;
+    border-left-color: #333333;
+    width: 50%;
+    -webkit-flex: none;
+        flex: none;
 }
 
 #rightPlaceholder {
-    overflow: hidden;	
+    overflow: hidden;    
 }
 
 #footer {
-	display:block;
-	text-align: center;
+    display:block;
+    text-align: center;
 }
 
 .headerTitle {
-	font-size: 60px;
-	color: #FFFFFF; 
-	margin-top: 20px;
-	margin-bottom: 0px;
-	line-size: 1.5;
+    font-size: 60px;
+    color: #FFFFFF; 
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-size: 1.5;
 
 }
 
 .headerSubtitle {
-	font-size: 21px;
-	color: #b9c8e0;
-	font-style: italic;
-	margin-top: 0;
+    font-size: 21px;
+    color: #b9c8e0;
+    font-style: italic;
+    margin-top: 0;
 }
 
 .navHeader {
-	font-size: 17.5px;
-	font-weight: bold;
+    font-size: 17.5px;
+    font-weight: bold;
 }
 
 .navItem {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 @font-face {
