@@ -41,7 +41,7 @@ body {
 
 #centerContent {
     overflow: auto;
-    margin-left: 16px;
+    padding-left: 16px;
     width: 50%;
     -webkit-flex: none;
         flex: none;
@@ -90,7 +90,7 @@ body {
         width: 100%;
     }
     #contentWrapper > #centerContent {
-        width: 100%;
+        width: calc(100% - 16px);
     }
     
     body > #header {
